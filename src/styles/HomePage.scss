@@ -1,0 +1,28 @@
+@import './partials/global';
+@import './partials/font';
+@import './partials/mixin';
+
+.main{
+
+    &__body{
+        @include wrapper-sidespace;
+
+        @include desktop{
+            @include flex-row{
+                flex-wrap: wrap;
+            }
+        }
+
+        &-left{
+            @include desktop{
+                width: 70%;
+            }
+        }
+
+        &-right{
+            @include desktop{
+                width: 30%;
+            }
+        }
+    }
+}

@@ -1,0 +1,118 @@
+@import './partials/global';
+@import './partials/font';
+@import './partials/mixin';
+
+.comment {
+  &__title {
+    margin-bottom: $large-padding;
+  }
+
+  // CommentContainer styles
+  &__card {
+    @include flex-row;
+    border-bottom: $divider;
+    margin-top: $large-padding;
+    padding-bottom: $regular-padding;
+  }
+
+  &__avatar {
+    @include avatar;
+    margin-right: $small-padding;
+  }
+
+  &__body {
+    @include flex-row {
+      flex-wrap: wrap;
+    }
+    width: 100%;
+  }
+
+  &__user {
+    font-weight: $weight-bold;
+  }
+
+  &__date {
+    margin-left: auto;
+    color: $primary-neutral-color;
+
+    @include tablet {
+      margin-right: $small-padding;
+    }
+  }
+
+  &__text {
+    width: 100%;
+    margin-top: $min-padding;
+
+    @include desktop {
+      margin-right: $large-padding;
+    }
+  }
+
+  // CommentIntake styles
+  &-form {
+    @include flex-row;
+    border-bottom: $divider;
+
+    &__avatar-wrapper {
+      @include avatar;
+      margin: $regular-padding $small-padding 0 0;
+
+      @include tablet {
+        margin-bottom: $regular-padding;
+      }
+    }
+
+    &__avatar {
+      height: 100%;
+    }
+
+    &__body {
+      flex-grow: 2;
+
+      @include tablet {
+        @include flex-row {
+          flex-wrap: wrap;
+        }
+      }
+    }
+
+    &__text {
+      font-size: $mobile-btnlbl-font;
+      font-weight: $weight-bold;
+      color: $primary-neutral-color;
+
+      @include tablet {
+        width: 100%;
+        height: 0;
+      }
+    }
+
+    &__input {
+      @include formfield;
+      height: 6rem;
+      margin-bottom: $small-padding;
+
+      @include tablet {
+        margin: 0 $small-padding 0 0;
+        flex-grow: 2;
+      }
+    }
+
+    &__submit {
+      @include button;
+      width: 100%;
+      margin-bottom: $regular-padding;
+
+      @include tablet {
+        margin-bottom: 0;
+        width: 10rem;
+        margin-right: $max-space;
+      }
+
+      @include tablet {
+        margin-right: $large-padding;
+      }
+    }
+  }
+}

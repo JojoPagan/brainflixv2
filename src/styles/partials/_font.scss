@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'avenir-next';
+    src: url(../../assets/fonts/AvenirNextLTPro-Bold.otf) format("otf"),
+    url(../../assets/fonts/alternative-files/AvenirNextLTProBold.ttf) format("ttf");
+    font-weight: 700;
+}
+
+
+@font-face {
+    font-family: 'avenir-next';
+    src: url(../../assets/fonts/AvenirNextLTPro-Regular.otf) format("otf"),
+        url(../../assets/fonts/alternative-files/AvenirNextLTPro.ttf) format("ttf");
+    font-weight: 400;
+}
+
+//font family
+$primary-font:'avenir-next';
+
+//font weight
+$weight-regular:400;
+$weight-bold:700;
+
+// desktop & tablet  font size
+$desk-page-header-font:33px;
+$desk-section-header-font:12px;
+$desk-subheader-font:14px;
+$desk-body-font:14px;
+$desk-btnlbl-font:12px;
+
+// mobile font size
+$mobile-page-header-font:24px;
+$moile-section-header-font:12px;
+$mobile-subheader-font:12px;
+$mobile-body-font:13px;
+$mobile-btnlbl-font:10px;
+
+//desktop & tablet line height
+$desk-page-header-line-height:44px;
+$desk-section-header-line-height:20px;
+$desk-subheader-line-height:22px;
+$desk-body-line-height:22px;
+$desk-btnlbl-line-height:20px;
+
+// mobile line height
+$mobile-page-header-line-height:32px;
+$mobile-section-header-line-height:20px;
+$mobile-subheader-line-height:18px;
+$mobile-body-line-height:18px;
+$mobile-btnlbl-line-height:20px;
+
+

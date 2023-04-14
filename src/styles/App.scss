@@ -1,0 +1,55 @@
+@import './partials/global';
+@import './partials/font';
+@import './partials/mixin';
+
+
+* {
+  font-family: $primary-font;
+  color:$primary-black;
+  margin:0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: $mobile-page-header-font;
+  font-weight: $weight-bold;
+  line-height: $mobile-page-header-line-height;
+  margin:0;
+
+  @include tablet {
+      font-size: $desk-page-header-font;
+      line-height: $desk-page-header-line-height;
+  }
+}
+
+h2 {
+  font-size: $mobile-subheader-font;
+  font-weight: $weight-bold;
+  line-height: $mobile-subheader-line-height;
+  margin:0;
+
+  @include tablet {
+      font-size: $desk-section-header-font;
+      line-height: $desk-section-header-line-height;
+  }
+}
+
+h3{
+  font-weight: $weight-bold;
+  
+  @include tablet {
+      font-size: $desk-subheader-font;
+      line-height: $desk-subheader-line-height;
+  }
+}
+
+p {
+  font-size: $mobile-body-font;
+  font-weight: $weight-regular;
+  line-height: $mobile-body-line-height;
+
+  @include tablet {
+      font-size: $desk-body-font;
+      line-height: $desk-body-line-height;
+  }
+}

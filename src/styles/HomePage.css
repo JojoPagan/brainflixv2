@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "avenir-next";
+  src: url(../../assets/fonts/AvenirNextLTPro-Bold.otf) format("otf"), url(../../assets/fonts/alternative-files/AvenirNextLTProBold.ttf) format("ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "avenir-next";
+  src: url(../../assets/fonts/AvenirNextLTPro-Regular.otf) format("otf"), url(../../assets/fonts/alternative-files/AvenirNextLTPro.ttf) format("ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "avenir-next";
+  src: url(../../assets/fonts/AvenirNextLTPro-Bold.otf) format("otf"), url(../../assets/fonts/alternative-files/AvenirNextLTProBold.ttf) format("ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "avenir-next";
+  src: url(../../assets/fonts/AvenirNextLTPro-Regular.otf) format("otf"), url(../../assets/fonts/alternative-files/AvenirNextLTPro.ttf) format("ttf");
+  font-weight: 400;
+}
+.main__body {
+  margin: 0 16px;
+}
+@media (min-width: 768px) {
+  .main__body {
+    margin: 0 36px;
+  }
+}
+@media (min-width: 1280px) {
+  .main__body {
+    margin: 0 200px;
+  }
+}
+@media (min-width: 1280px) {
+  .main__body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 1280px) {
+  .main__body-left {
+    width: 70%;
+  }
+}
+@media (min-width: 1280px) {
+  .main__body-right {
+    width: 30%;
+  }
+}/*# sourceMappingURL=HomePage.css.map */

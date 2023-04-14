@@ -1,0 +1,75 @@
+@font-face {
+  font-family: "avenir-next";
+  src: url(../../assets/fonts/AvenirNextLTPro-Bold.otf) format("otf"), url(../../assets/fonts/alternative-files/AvenirNextLTProBold.ttf) format("ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "avenir-next";
+  src: url(../../assets/fonts/AvenirNextLTPro-Regular.otf) format("otf"), url(../../assets/fonts/alternative-files/AvenirNextLTPro.ttf) format("ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "avenir-next";
+  src: url(../../assets/fonts/AvenirNextLTPro-Bold.otf) format("otf"), url(../../assets/fonts/alternative-files/AvenirNextLTProBold.ttf) format("ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "avenir-next";
+  src: url(../../assets/fonts/AvenirNextLTPro-Regular.otf) format("otf"), url(../../assets/fonts/alternative-files/AvenirNextLTPro.ttf) format("ttf");
+  font-weight: 400;
+}
+.video-selector {
+  padding: 40px 0 8px;
+}
+@media (min-width: 1280px) {
+  .video-selector {
+    border-left: 1px solid #E1E1E1;
+    padding-left: 16px;
+    height: 100%;
+  }
+}
+.video-selector__title {
+  color: #AFAFAF;
+  margin: 0 0 40px 8px;
+}
+@media (min-width: 768px) {
+  .video-selector__title {
+    font-size: 14px;
+  }
+}
+
+.video-selector-container {
+  display: flex;
+  flex-direction: row;
+  padding: 8px;
+}
+.video-selector-container:hover {
+  cursor: pointer;
+  background-color: #0065AD;
+  opacity: 0.85;
+  border-radius: 0.25rem;
+  transition: 0.5s ease;
+}
+.video-selector-container__image {
+  display: block;
+  width: 7.5rem;
+  height: 4.7rem;
+}
+.video-selector-container__text-wrapper {
+  margin-left: 16px;
+}
+.video-selector-container__title, .video-selector-container__creator {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+}
+@media (min-width: 768px) {
+  .video-selector-container__title, .video-selector-container__creator {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+.video-selector-container__creator {
+  font-weight: 400;
+  margin-top: 16px;
+}/*# sourceMappingURL=VideoSelector.css.map */

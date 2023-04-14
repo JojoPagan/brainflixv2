@@ -1,0 +1,105 @@
+@import './partials/global';
+@import './partials/font';
+@import './partials/mixin';
+
+// VideoPlayer styling
+.video-player {
+    &__wrapper {
+        width: 100%;
+        background-color: black;
+
+        @include desktop {
+            padding: 0 $max-space * 3;
+        }
+    }
+
+    &__player {
+        display: block;
+        width: 100%;
+        max-height: 34rem;
+
+        @include tablet {
+            margin: auto;
+            width: 90%;
+        }
+
+        @include desktop {
+            width: 80%;
+        }
+    }
+}
+
+// VideoDetail styling
+.video-description {
+    &__title {
+        margin-top: $large-padding;
+    }
+
+    &__detail {
+        border-bottom: $divider;
+        margin-top: $small-padding;
+
+        @include tablet {
+            @include flex-row {
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin-top: $regular-padding;
+            }
+        }
+    }
+
+    &__subtitle {
+        @include flex-row {
+            align-items: baseline;
+        }
+        margin-bottom: $large-padding;
+
+        @include tablet {
+            margin-bottom: $regular-padding;
+        }
+    }
+
+    &__creator {
+        margin-right: $min-padding;
+
+        @include tablet {
+            font-size: $desk-subheader-font;
+            font-weight: $weight-bold;
+        }
+    }
+
+    &__date {
+        color: $primary-neutral-color;
+    }
+
+    &__stats-wrapper {
+        @include flex-row {
+            align-items: center;
+        }
+
+        padding-bottom: $regular-padding;
+    }
+
+    &__view-icon, &__like-icon {
+        margin-right: $min-padding;
+    }
+
+    &__view-num {
+        margin-right: $regular-padding;
+    }
+
+    &__view-num, &__like-num {
+        @include desktop {
+            margin-right: $large-padding;
+        }
+    }
+
+    &__text {
+        padding: $regular-padding 0 $max-space;
+
+        @include tablet {
+            padding: $max-space 0 $max-space * 1.6;
+            width: 75%;
+        }
+    }
+}

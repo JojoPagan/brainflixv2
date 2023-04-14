@@ -1,0 +1,62 @@
+@import './partials/global';
+@import './partials/font';
+@import './partials/mixin';
+
+.video-selector {
+  padding: $max-space 0 $min-padding;
+
+  @include desktop {
+    border-left: $divider;
+    padding-left: $small-padding;
+    height: 100%;
+  }
+
+  &__title {
+    color: $primary-neutral-color;
+    margin: 0 0 $max-space $min-padding;
+
+    @include tablet {
+      font-size: $desk-body-font;
+    }
+  }
+}
+
+.video-selector-container {
+  @include flex-row;
+  padding: $min-padding;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $secondary-color;
+    opacity: 0.85;
+    border-radius: 0.25rem;
+    transition: 0.5s ease;
+  }
+
+  &__image {
+    display: block;
+    width: 7.5rem;
+    height: 4.7rem;
+  }
+
+  &__text-wrapper {
+    margin-left: $small-padding;
+  }
+
+  &__title,
+  &__creator {
+    font-weight: $weight-bold;
+    font-size: $mobile-body-font;
+    line-height: $mobile-body-line-height;
+
+    @include tablet {
+      font-size: $desk-body-font;
+      line-height: $desk-body-line-height;
+    }
+  }
+
+  &__creator {
+    font-weight: $weight-regular;
+    margin-top: $small-padding;
+  }
+}

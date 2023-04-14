@@ -1,0 +1,33 @@
+//primary colors
+
+$primary-color: #0095FF;
+$primary-neutral-color:#AFAFAF;
+$primary-black:#323232;
+$primary-white:#FFFFFF;
+$border-color:#E1E1E1;
+
+//secondary color
+
+$secondary-color: #0065AD;
+$secondary-neutral-color:#FAFAFA;
+
+
+//padding
+$min-padding:8px;
+$small-padding:16px;
+$regular-padding:24px;
+$large-padding:32px;
+$max-space:40px;
+
+
+//break points
+$desktop-size:1280px;
+$tablet-size:768px;
+$mobile-size:320px;
+
+//logo
+$logo-height:25px;
+$logo-width:120px;
+
+//divider
+$divider:1px solid $border-color;

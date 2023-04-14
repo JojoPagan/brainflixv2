@@ -1,0 +1,31 @@
+@import './partials/global';
+@import './partials/font';
+@import './partials/mixin';
+
+.video-player{
+
+    &__wrapper{
+        width: 100%;
+        background-color:black;
+        
+        @include desktop{
+            padding:0 $max-space*3;
+        }
+    }
+
+    &__player{
+        display:block;
+        width: 100%;
+        max-height: 34rem;
+
+        @include tablet {
+            margin:auto;
+            width: 90%;
+        }
+
+        @include desktop {
+            width: 80%;
+        }
+    }
+}
+
